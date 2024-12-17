@@ -224,6 +224,7 @@ class CustomizeScreen extends StatelessWidget {
                             itemCount: controller.imgString.length,
                           ),
                         ),
+                        const Gap(24),
                       ],
                     ),
                   ),
