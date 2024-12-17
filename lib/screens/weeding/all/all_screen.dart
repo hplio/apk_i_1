@@ -20,7 +20,7 @@ class AllScreen extends StatelessWidget {
               ListView.separated(
                 physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
-                itemBuilder: (_, __) => const AllFoodCard(),
+                itemBuilder: (_, __) => const AllFoodCard(), // custom food card
                 separatorBuilder: (_, __) => const Gap(16),
                 itemCount: 4,
               ),

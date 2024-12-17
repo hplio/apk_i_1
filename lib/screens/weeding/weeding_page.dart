@@ -151,6 +151,7 @@ class WeedingPage extends StatelessWidget {
                 ),
               ],
             ),
+            //Tab bar 
             const TabBar(
               labelColor: TColor.secondery,
               indicatorColor: TColor.secondery,

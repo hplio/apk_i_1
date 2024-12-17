@@ -54,7 +54,7 @@ class AllFoodCard extends StatelessWidget {
               const Positioned(
                 bottom: 0,
                 right: 0,
-                child: PersonWidget(),
+                child: PersonWidget(), //custom widget
               )
             ],
           ),
