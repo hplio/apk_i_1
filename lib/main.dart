@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 
 void main() {
   // runApp(const MyApp());
-   WidgetsFlutterBinding.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized();
 
   // Lock the app orientation to portrait only
   SystemChrome.setPreferredOrientations([
@@ -23,7 +23,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-    
       theme: ThemeDesinge.lightTheme,
       debugShowCheckedModeBanner: false,
       home: const WeedingPage(),
