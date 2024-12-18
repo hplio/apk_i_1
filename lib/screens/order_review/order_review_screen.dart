@@ -165,7 +165,7 @@ class OrderReviewScree extends StatelessWidget {
                                             ),
                                       ),
                                       TextSpan(
-                                        text: '  ${orderReviewController.getTotalPay()}',
+                                        text: '  ${orderReviewController.payPrice()}',
                                         style: Theme.of(context)
                                             .textTheme
                                             .headlineSmall!
@@ -229,7 +229,7 @@ class OrderReviewScree extends StatelessWidget {
                   style: Theme.of(context).textTheme.titleSmall,
                 ),
                 Text(
-                  orderReviewController.getTotalPay(),
+                  orderReviewController.payPrice(),
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
               ],

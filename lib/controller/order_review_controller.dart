@@ -21,8 +21,18 @@ class OrderReviewController extends GetxController {
     return formatedNumber(sPrice);
   }
 
-  String getTotalPay(){
-    final payPrice= (controller.sliderValue.value.toInt() * controller.dynamicPrice.value);
+  String payPrice() {
+    final pPrice =
+        (controller.sliderValue.value.toInt() * controller.dynamicPrice.value) -
+            ((299 * controller.sliderValue.value.toInt()) -
+                (controller.sliderValue.value.toInt() *
+                    controller.dynamicPrice.value));
+    return formatedNumber(pPrice);
+  }
+
+  String getTotalPay() {
+    final payPrice =
+        (controller.sliderValue.value.toInt() * controller.dynamicPrice.value);
     return formatedNumber(payPrice);
   }
 

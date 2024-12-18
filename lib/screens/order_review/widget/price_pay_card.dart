@@ -109,7 +109,7 @@ class PricePayCard extends StatelessWidget {
                 const Gap(12),
                  TitleAndPriceWidget(
                   title: 'To Pay',
-                  price: '₹${orderReviewController.getTotalPay()}',
+                  price: '₹${orderReviewController.payPrice()}',
                   isTitle: true,
                 ),
               ],
